@@ -1,0 +1,224 @@
+1.--->git is a version control system 
+
+
+ Advantages :
+    - easily recover old files
+    - who introduce an issue when (it mean who changes the data or update data)
+    - rollback to previous version of code
+    
+     
+2.--->Hisotry of version control System :
+-> local version control systrem :
+
+Firstly developer created local database and store their versions                  of code in local database (cons : That local version control can damaged or maybe can affeted and you can loose your data) (pros : it can track file & rollback)
+
+-> Centralized Version control system : 
+
+basically a centralized server in which user can pull and push files and works same as like local database but its a different server not in our computer (cons : If the server damaged and anything happened then the data can be loose) 
+
+-> Distributed Version control system : 
+
+same as centralized server the change is every user has its own data's backup in thier system 
+and git is distributed version control system
+
+
+--linus torvals (created of git)--  
+ 
+
+
+Difference Between git and github :
+ 
+git is repository and github is used to host the git repository
+
+
+--->Features Of Git : 
+   -> it captures the snapshot (when you create git repo it create .git file than you can access every version of your project or code)
+   -> alomost every operation is local(all git operation performed in your computer than it pushes the repo in server)
+   -> git has integrity (git internally use checksum to verify the file) checksum is one kind of verfication method for files
+   -> git generally only add data (it only adds data in .git repo when you made change in file)
+
+
+
+--->git installed : 
+
+- we got git command line interface & we got gitbash(basically commandline)
+- command :
+      pwd(present working directory)
+       cd(change directory)
+- CLI(you have to use commands) 
+- GUI(it provide gui and runs command in back and thru GUI you can use git)
+
+
+For Setting User in git you can use this command
+
+for name :  git config --global user.name "akshay"
+for email :  git config --global user.email "akshay"
+
+
+---> git three stage architecture :
+   to save any version of file we call them "commit"
+  
+
+1.Working Directory : currently working area
+2.stanging area : set of files thats you want to upload 
+3.git directory : .git named folder where our files saved in compressed version 
+
+
+
+
+command : 
+git status : for checking the git repo is it or not
+
+git init : to make repo is git
+
+git add --a : stage all change
+
+git commit -m "this is modified" : to save changed file
+
+git log: to check all the commits
+
+git clone "link of any github repo" "folder name that you want to give to repo": to clone any github's repo
+
+rm -rf .git : to delete a git repo
+
+ls : list
+
+pwd :  present working directory
+
+cd : change directory
+
+
+--> File Status Life Cycle
+   
+  untracked : when you initialize the git repo that stage
+  
+  unmodified : when add any file using git add --a or maybe solo file that stage
+  
+  modified : when you modify any file that file after adding files
+
+  staged : finally stage that where all unmodified and modified are added usiing git add command
+
+
+to ignore any files during commit or staging you have to create a (.gitignore) and write the name of file in it so git will ignore that file while adding or staging repo
+
+you can use touch command to create any black file
+
+touch "file name with extension"  ex : touch index.html
+
+if you want remove any particulars extension file like if you dont want to see any file with .log extension  in stage or unmodified than you have to put "*.{extension}"
+
+ex : *.log
+
+you can also ignore any directory or folder while performing any thing just put directory/folder name in gitignore file with "/" 
+ex : dir/
+
+git diff : its command to check difference between working stage and staging stage for same file
+
+git diff --staged : it compares previous commit to its current staging area and show its result
+
+TO SKIP STAGING AREA : 
+  git commit -a -m : it skip the stage area and it doesnt commit untracked file
+
+how to move files or remove files : 
+   git rm "filename" : it removes the files from dirctory and commit the action
+
+how to rename any file :
+
+git mv "the current name"  "changing name" : to change any files name
+
+
+to untrack any file from gitignore
+
+git rm --cached "file name"
+
+git log -p : to show on going logs done by users with their differences what removed and added
+
+git log -p -1 : we can also specify the how many commits you wants to so
+
+git log --stat : it show detailed commit of user what have done by user in repo in each file
+
+git log --pretty=oneline : it shows all commit in oone line
+
+
+git log --pretty=format:"%ae == %h" :to show filtered commit as according what you want ae means author email an means author name
+
+git commit --amend : to edit any commit by other user
+  
+how unstage staged files :
+
+git restore --staged "filename" :  alter command in my pc
+
+git rm --cached "filename"
+
+git checkout -- "file name" : to go back to previous version of your file previous commit
+
+git checkout -f : to got back to your last commit file and remove all the current channges
+
+
+WORKING WITH REMOTE REPO'S : 
+
+git push -u origin master :  to push your repo to github
+
+
+ALIAS : its mean write short command instead of long command
+
+ git config --global alias."shortcut that you want"  "original command"
+
+ex : git config --global alias.st status	
+
+
+BRANCHING :
+
+
+ In Git, a branch is a new/separate version of the main repository.
+
+
+Branches allow you to work on different parts of a project without impacting the main branch.
+
+When the work is complete, a branch can be merged with the main project.
+
+You can even switch between branches and work on different projects without them interfering with each other.
+
+to craete new branch 
+
+git checkout -b "branchname"
+
+git checkout master : to get back to master branch'
+
+to check all branch : git branch	
+
+to merge sub branch to master command :  git merge "branch name"
+
+
+Merge Conflict : 
+
+
+Merge Conflicts are the conflicts that occur when a developer is editing a file in a particular branch and the other developer is also editing that same file or when developer A edits some line of code and that same line of code is being edited by another developer B that leads to conflicts while merging.
+
+  to solve merge conflit vs code provides simple solution what you need in current branch while merging it
+
+BRANCHING WORKFLOW : 
+
+
+ there are 2 types of branches :
+1->long running branches
+2->topic branches
+
+
+long running branches inshort used for to resolve real time error or bug 
+and topic branch used for idea impletations
+
+
+REMOTE FILES :
+git remote -v  : to check remote repos in git repo
+
+
+git remote push origin "repo url from github" : to add remote origin
+
+
+git push -u origin master : to push your repo on github
+
+git push -d origin "branch name" : to delete branch from github
+
+git push origin "branch name" : to push branches in same repo
+
