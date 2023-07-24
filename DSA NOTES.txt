@@ -1,0 +1,27 @@
+1.TIME COMPLEXITY (https://www.geeksforgeeks.org/understanding-time-complexity-simple-examples/)
+2.SPACE COMPLEXITY (https://www.geeksforgeeks.org/g-fact-86/)
+3.ARRAY (https://www.geeksforgeeks.org/array-data-structure/)
+4.SEARCHING (https://www.geeksforgeeks.org/searching-algorithms/)
+5.SORTING (https://www.geeksforgeeks.org/sorting-algorithms/)
+6.STRING (https://www.geeksforgeeks.org/string-data-structure/)
+7.HASHING (https://www.geeksforgeeks.org/hashing-data-structure/)
+8.BITWISE ALOGRIGHTMS (https://www.geeksforgeeks.org/bitwise-algorithms/)
+9.LINKED LIST (https://www.geeksforgeeks.org/data-structures/linked-list/)
+10.STACKS (https://www.geeksforgeeks.org/stack-data-structure/)
+11.QUEUES (https://www.geeksforgeeks.org/queue-data-structure/)
+12.HEAPS (https://www.geeksforgeeks.org/heap-data-structure/)
+13.TREES (https://www.geeksforgeeks.org/binary-tree-data-structure/)
+14.GRAPHS (https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/)
+15.GREEDY (https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/)
+16.DYNAMIC PROGRAMMING (https://www.geeksforgeeks.org/dynamic-programming/)
+17.ALGORITHMS (https://www.geeksforgeeks.org/fundamentals-of-algorithms/)
+18.DESIGN PATTERNS (https://www.geeksforgeeks.org/software-design-patterns/)
+
+
+c++(https://www.geeksforgeeks.org/c-plus-plus/)
+
+
+MATH : 
+  1.MISSING ARRAY NUMBER
+  2.MINIMUM STEPS TO MAKE PRODUCT TO EQUAL TO ONE
+  3.TRAILING ZEROS WITH FACTORIAL
